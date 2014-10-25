@@ -1,0 +1,59 @@
+body {
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+#box {
+    width: 900px;
+    height: 400px;
+    background-color: gray;
+    overflow: hidden;
+    margin: auto;
+}
+#container {
+    position: relative;
+    width: 20000px;
+    height: 100%;
+    left: 0;
+    padding: 0;
+    top: 0;
+    margin: 0;
+}
+.elements {
+    position: relative;
+    list-style: none;
+    float: left;
+    height: 100%;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+#prevHandler, #nextHandler{
+    position: absolute;
+    background-color: black;
+    top: 175px;
+    width: 50px;
+    height: 50px;
+}
+#prevHandler {
+    left: 20px;
+}
+#nextHandler{
+    right: 20px;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.purple {
+    background-color: purple;
+}
+.yellow {
+    background-color: yellow;
+}
+.gray {
+    background-color: gray;
+}
