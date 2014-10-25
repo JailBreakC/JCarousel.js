@@ -1,6 +1,6 @@
 JCarousel.js
 ============
-JCarousel v0.1
+JCarousel.js v0.1
 
 励志成为一个好用、可定制的轮播插件。
 
