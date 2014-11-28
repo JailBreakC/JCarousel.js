@@ -8,8 +8,33 @@
 
 </head>
 <body>
-    <div id="box">
-        <ul id="container">
+    <h2>每次动一张图片<small>JCarousel.init('#box1', '#container1', 3);</small></h2>
+    <div class="box" id="box1">
+        <ul class="container" id="container1">
+            <li class="elements red"></li>
+            <li class="elements blue"></li>
+            <li class="elements green"></li>
+            <li class="elements purple"></li>
+            <li class="elements yellow"></li>
+            <li class="elements gray"></li>
+        </ul>
+    </div>
+
+    <h2>每次动两张图片<small>JCarousel.init('#box2', '#container2', 3, 2);</small></h2>
+    <div class="box" id="box2">
+        <ul class="container" id="container2">
+            <li class="elements red"></li>
+            <li class="elements blue"></li>
+            <li class="elements green"></li>
+            <li class="elements purple"></li>
+            <li class="elements yellow"></li>
+            <li class="elements gray"></li>
+        </ul>
+    </div>
+
+    <h2>每次动三张图片<small>JCarousel.init('#box2', '#container2', 3, 3);</small></h2>
+    <div class="box" id="box3">
+        <ul class="container" id="container3">
             <li class="elements red"></li>
             <li class="elements blue"></li>
             <li class="elements green"></li>
@@ -19,7 +44,9 @@
         </ul>
     </div>
     <script>
-    JCarousel('#box', '#container', 3, 1);
+    var a = JCarousel.Init('#box1', '#container1', 3);
+    var b = JCarousel.Init('#box2', '#container2', 3, 2);
+    var c = JCarousel.Init('#box3', '#container3', 3, 3);
     </script>
 </body>
 </html>
