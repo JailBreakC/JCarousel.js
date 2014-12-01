@@ -4,7 +4,7 @@
 
         var creatEle = function(tag, attr) {
             if( typeof attr !== "object" ){
-                throw "attr should be an object";
+                //throw "attr should be an object";
             }
             var ele = document.createElement(tag);
             for(name in attr){
@@ -16,27 +16,29 @@
         };
 
         var getAttr = function () {
+             box = box.toString();
+             container = container.toString();
             var attr = {};
             if(moveNum > showNum){
-                throw "The moveNum should not large than the showNum";
+                //throw "The moveNum should not large than the showNum";
             }
-            if (box[0] === '.') {
+            if (box.slice(0,1) === '.') {
                 attr.box = document.getElementsByClassName(box.slice(1))[0];
             }
-            else if(box[0] === '#') {
+            else if(box.slice(0,1) === '#') {
                 attr.box = document.getElementById(box.slice(1));
             }
             else {
-                throw "The ariguments should be a .classname or #id";
+                //throw "The ariguments should be a .classname or #id";
             }
-            if (container[0] === '.') {
+            if (container.slice(0,1) === '.') {
                 attr.container = document.getElementsByClassName(container.slice(1))[0];
             }
-            else if(container[0] === '#') {
+            else if(container.slice(0,1) === '#') {
                 attr.container = document.getElementById(container.slice(1));
             }
             else {
-                throw "The ariguments should be a .classname or #id";
+                //throw "The ariguments should be a .classname or #id";
             }
             return attr;
         };

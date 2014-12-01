@@ -8,11 +8,13 @@ small {
     color: gray;
 }
 .box {
+    position: relative;
     width: 900px;
     height: 400px;
     background-color: gray;
     overflow: hidden;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container {
     position: relative;
@@ -27,10 +29,16 @@ small {
     position: relative;
     list-style: none;
     float: left;
-    height: 100%;
-    width: 300px;
     margin: 0;
     padding: 0;
+}
+.one {
+    height: 100%;
+    width: 900px;
+}
+.three {
+    height: 100%;
+    width: 300px;
 }
 .prevHandler, .nextHandler{
     position: absolute;

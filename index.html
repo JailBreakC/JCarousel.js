@@ -8,45 +8,57 @@
 
 </head>
 <body>
+    <h2>显示一张滑动一张<small>JCarousel.init('#box4', '#container1');</small></h2>
+    <div class="box" id="box4">
+        <ul class="container" id="container4">
+            <li class="elements one red"></li>
+            <li class="elements one blue"></li>
+            <li class="elements one green"></li>
+            <li class="elements one purple"></li>
+            <li class="elements one yellow"></li>
+            <li class="elements one gray"></li>
+        </ul>
+    </div>
     <h2>每次动一张图片<small>JCarousel.init('#box1', '#container1', 3);</small></h2>
     <div class="box" id="box1">
         <ul class="container" id="container1">
-            <li class="elements red"></li>
-            <li class="elements blue"></li>
-            <li class="elements green"></li>
-            <li class="elements purple"></li>
-            <li class="elements yellow"></li>
-            <li class="elements gray"></li>
+            <li class="elements three red"></li>
+            <li class="elements three blue"></li>
+            <li class="elements three green"></li>
+            <li class="elements three purple"></li>
+            <li class="elements three yellow"></li>
+            <li class="elements three gray"></li>
         </ul>
     </div>
 
     <h2>每次动两张图片<small>JCarousel.init('#box2', '#container2', 3, 2);</small></h2>
     <div class="box" id="box2">
         <ul class="container" id="container2">
-            <li class="elements red"></li>
-            <li class="elements blue"></li>
-            <li class="elements green"></li>
-            <li class="elements purple"></li>
-            <li class="elements yellow"></li>
-            <li class="elements gray"></li>
+            <li class="elements three red"></li>
+            <li class="elements three blue"></li>
+            <li class="elements three green"></li>
+            <li class="elements three purple"></li>
+            <li class="elements three yellow"></li>
+            <li class="elements three gray"></li>
         </ul>
     </div>
 
-    <h2>每次动三张图片<small>JCarousel.init('#box2', '#container2', 3, 3);</small></h2>
+    <h2>每次动三张图片<small>JCarousel.init('#box3', '#container3', 3, 3);</small></h2>
     <div class="box" id="box3">
         <ul class="container" id="container3">
-            <li class="elements red"></li>
-            <li class="elements blue"></li>
-            <li class="elements green"></li>
-            <li class="elements purple"></li>
-            <li class="elements yellow"></li>
-            <li class="elements gray"></li>
+            <li class="elements three red"></li>
+            <li class="elements three blue"></li>
+            <li class="elements three green"></li>
+            <li class="elements three purple"></li>
+            <li class="elements three yellow"></li>
+            <li class="elements three gray"></li>
         </ul>
     </div>
     <script>
     var a = JCarousel.Init('#box1', '#container1', 3);
     var b = JCarousel.Init('#box2', '#container2', 3, 2);
     var c = JCarousel.Init('#box3', '#container3', 3, 3);
+    var d = JCarousel.Init('#box4', '#container4');
     </script>
 </body>
 </html>
