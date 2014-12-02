@@ -87,12 +87,13 @@
         handler.style.left = '0px';
         handler.style.right = '0px';
         box.style.position = 'relative';
-        prev.innerHTML = '<';
-        next.innerHTML = '>';
         prev.style.display = 'none';
         next.style.display = 'none';
         box.appendChild(prev);
         box.appendChild(next);
+
+        prev.innerHTML = '&lt;';
+        next.innerHTML = '&gt;';
 
         box.onmouseover = function(){
             prev.style.display = 'block';

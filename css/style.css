@@ -9,6 +9,7 @@ small {
 }
 .box {
     position: relative;
+    z-index: 0;
     width: 900px;
     height: 400px;
     background-color: gray;
@@ -49,6 +50,7 @@ small {
     color: #FFF;
     font-size: 40px;
     cursor: pointer;
+    z-index: 500;
 }
 .prevHandler {
     left: 20px;
